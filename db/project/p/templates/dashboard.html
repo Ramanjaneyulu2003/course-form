@@ -1,0 +1,19 @@
+<h1>welcome to dashboard</h1>
+<table border="1px">
+    <tr>
+        <th>student name</th>
+        <th>student course name</th>
+        <th>student fees</th>
+        <th>Delete</th>
+    </tr>
+    {% for d in data %}
+    <tr>
+<td>{{d.sname}}</td>
+<td>{{d.scourse}}</td>
+<td>{{d.sfees}}</td>
+<td><a href="/delete/{{d.id}}">Delete</a></td>
+    </tr>
+    {% endfor %}
+    
+</table>
+<a href="">course</a>
